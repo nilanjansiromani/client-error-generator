@@ -1,28 +1,30 @@
+/* eslint-disable jsx-a11y/alt-text */
 import logo from './logo.svg';
 import './App.css';
-import {aRefError} from './all-the-errors';
-import LogRocket from 'logrocket';
-LogRocket.init('qr4c1c/nilulin');
+import { aRefError } from './all-the-errors';
+// import LogRocket from 'logrocket';
 
+import * as Sentry from "@sentry/react";
+import { Integrations } from "@sentry/tracing";
+
+// LogRocket.init('qr4c1c/nilulin');
+
+Sentry.init({
+  dsn: "https://ce1b13ef85934e9f992c772d7463c63b@o520667.ingest.sentry.io/5631347",
+  integrations: [new Integrations.BrowserTracing()],
+
+  // We recommend adjusting this value in production, or using tracesSampler
+  // for finer control
+  tracesSampleRate: 1.0,
+});
 
 function App() {
-  aRefError();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>All the error errors</h1>
+      <button onClick={aRefError}>Lets throw a new Exception</button>;
+      <hr></hr>
+=      <img src="https://s1.sentry-cdn.com/_static/672c31ec0472f66904c1d549efa838cc/sentry/dist/react.b3a691.svg" />
     </div>
   );
 }
