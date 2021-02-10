@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import {aRefError} from './all-the-errors';
 
 function App() {
+  aRefError();
   return (
     <div className="App">
       <header className="App-header">
