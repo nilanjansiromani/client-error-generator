@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import {aRefError} from './all-the-errors';
+import LogRocket from 'logrocket';
+LogRocket.init('qr4c1c/nilulin');
+
 
 function App() {
   aRefError();

@@ -10,8 +10,8 @@ In doing so we compare the products
 5. Walmart Splunk
 
 The main errors that this generates:
+
 1. JS error
 2. Xhr error
 3. Wrong image url
 4. 404 error
-
