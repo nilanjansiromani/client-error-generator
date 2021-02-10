@@ -20,10 +20,10 @@ Sentry.init({
 function App() {
   return (
     <div className="App">
-      <h1>All the error errors</h1>
+      <h1>All the error</h1>
       <button onClick={aRefError}>Lets throw a new Exception</button>;
       <hr></hr>
-      <img src="https://s1.sentry-cdn.com/_static/672c31ec0472f66904c1d549efa838cc/sentry/dist/react.b3a691.svg" />
+      <img src="https://shirsendu.com/wp-content/uploads/2018/02/WordPress-Errors.png" />
       <hr></hr>
       <h3>here is a bad image</h3>
       <img src="https://s1.sentry-cdn.com/_static/672c31ec0472f66904c1d549efa838cc/sentry/di" />
