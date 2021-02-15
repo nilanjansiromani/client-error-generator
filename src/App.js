@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/alt-text */
 import './App.css';
 import { aRefError } from './all-the-errors';
+
+// ------------ LOG ROCKET-----------------
 // import LogRocket from 'logrocket';
-
-// import * as Sentry from "@sentry/react";
-// import { Integrations } from "@sentry/tracing";
-
 // LogRocket.init('qr4c1c/nilulin');
 
+// ------------ SENTRY-----------------
+// import * as Sentry from "@sentry/react";
+// import { Integrations } from "@sentry/tracing";
 // Sentry.init({
 //   dsn: "https://ce1b13ef85934e9f992c772d7463c63b@o520667.ingest.sentry.io/5631347",
 //   integrations: [new Integrations.BrowserTracing()],
