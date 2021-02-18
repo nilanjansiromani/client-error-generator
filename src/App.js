@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import './App.css';
-import { aRefError } from './all-the-errors';
+import { generateReferenceError, httpErrorGenerator } from './all-the-errors';
 
 // ------------ LOG ROCKET-----------------
 // import LogRocket from 'logrocket';
@@ -21,13 +21,11 @@ import { aRefError } from './all-the-errors';
 function App() {
   return (
     <div className="App">
-      <h1>All the error</h1>
-      <button onClick={aRefError}>Lets throw a new Exception</button>;
-      <hr></hr>
-      <img src="https://shirsendu.com/wp-content/uploads/2018/02/WordPress-Errors.png" />
-      <hr></hr>
-      <h3>here is a bad image</h3>
-      <img src="https://s1.sentry-cdn.com/_static/672c31ec0472f66904c1d549efa838cc/sentry/di" />
+      <button onClick={generateReferenceError}>Lets throw a new Exception</button><br/><br/><br/>
+      <button onClick={httpErrorGenerator.http400}>New 400 Error</button><br/><br/><br/>
+      <button onClick={httpErrorGenerator.http403}>New 403 Error</button><br/><br/><br/>
+      <button onClick={httpErrorGenerator.http404}>New 404 Error</button><br/><br/><br/>
+      <button onClick={httpErrorGenerator.http500}>New 500 Error</button><br/><br/><br/>
     </div>
   );
 }
