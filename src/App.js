@@ -2,11 +2,12 @@ import { generateReferenceError, httpErrorGenerator } from './all-the-errors';
 
 // ------------ LOG ROCKET-----------------
 import LogRocket from 'logrocket';
-LogRocket.init('qr4c1c/nilulin');
+
 
 // ------------ SENTRY-----------------
 import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
+
 Sentry.init({
   dsn: "https://ce1b13ef85934e9f992c772d7463c63b@o520667.ingest.sentry.io/5631347",
   integrations: [new Integrations.BrowserTracing()],
@@ -15,6 +16,7 @@ Sentry.init({
   // for finer control
   tracesSampleRate: 1.0,
 });
+LogRocket.init('qr4c1c/nilulin');
 
 function App() {
   return (
