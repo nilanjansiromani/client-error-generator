@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-import './App.css';
 import { generateReferenceError, httpErrorGenerator } from './all-the-errors';
 
 // ------------ LOG ROCKET-----------------
