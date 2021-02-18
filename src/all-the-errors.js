@@ -2,7 +2,7 @@
 // intentionally throw a reference error
 export const generateReferenceError = () => {
     //eslint-disable-next-line
-    throw new Error("asfasd");
+    throw new Error("Sampple error and the page breaks");
 }
 
 const fetcher = (code) => {
