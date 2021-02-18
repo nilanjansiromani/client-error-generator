@@ -1,20 +1,20 @@
 import { generateReferenceError, httpErrorGenerator } from './all-the-errors';
 
 // ------------ LOG ROCKET-----------------
-// import LogRocket from 'logrocket';
-// LogRocket.init('qr4c1c/nilulin');
+import LogRocket from 'logrocket';
+LogRocket.init('qr4c1c/nilulin');
 
 // ------------ SENTRY-----------------
-// import * as Sentry from "@sentry/react";
-// import { Integrations } from "@sentry/tracing";
-// Sentry.init({
-//   dsn: "https://ce1b13ef85934e9f992c772d7463c63b@o520667.ingest.sentry.io/5631347",
-//   integrations: [new Integrations.BrowserTracing()],
+import * as Sentry from "@sentry/react";
+import { Integrations } from "@sentry/tracing";
+Sentry.init({
+  dsn: "https://ce1b13ef85934e9f992c772d7463c63b@o520667.ingest.sentry.io/5631347",
+  integrations: [new Integrations.BrowserTracing()],
 
-//   // We recommend adjusting this value in production, or using tracesSampler
-//   // for finer control
-//   tracesSampleRate: 1.0,
-// });
+  // We recommend adjusting this value in production, or using tracesSampler
+  // for finer control
+  tracesSampleRate: 1.0,
+});
 
 function App() {
   return (
