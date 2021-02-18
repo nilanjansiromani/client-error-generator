@@ -1,4 +1,4 @@
-import { generateReferenceError, httpErrorGenerator } from './all-the-errors';
+import { generateReferenceError, httpErrorGenerator, cosnsoleErrors } from './all-the-errors';
 
 // // ------------ LOG ROCKET-----------------
 // import LogRocket from 'logrocket';
@@ -20,12 +20,20 @@ import { generateReferenceError, httpErrorGenerator } from './all-the-errors';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App foo gamma">
       <button onClick={generateReferenceError}>Lets throw a new Exception</button><br /><br /><br />
       <button onClick={httpErrorGenerator.http400}>New 400 Error</button><br /><br /><br />
       <button onClick={httpErrorGenerator.http403}>New 403 Error</button><br /><br /><br />
       <button onClick={httpErrorGenerator.http404}>New 404 Error</button><br /><br /><br />
       <button onClick={httpErrorGenerator.http500}>New 500 Error</button><br /><br /><br />
+      <img src="https://via.placeholder.com/150" alt="BigCo Inc. logo" />
+      <img src="https://via.placeholders.com/150" alt="BigCo Inc. logo" />
+      <button onClick={cosnsoleErrors}>try a console error</button><br /><br /><br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus ducimus sequi odit reiciendis in. Nulla illum veritatis, pariatur maiores, voluptates vel nam sit, ut odit rerum quaerat cupiditate placeat ab?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus ducimus sequi odit reiciendis in. Nulla illum veritatis, pariatur maiores, voluptates vel nam sit, ut odit rerum quaerat cupiditate placeat ab?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus ducimus sequi odit reiciendis in. Nulla illum veritatis, pariatur maiores, voluptates vel nam sit, ut odit rerum quaerat cupiditate placeat ab?
+      </p>
     </div>
   );
 }
