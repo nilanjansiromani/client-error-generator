@@ -1,14 +1,8 @@
 
 // intentionally throw a reference error
 export const generateReferenceError = () => {
-    // Let try a reference error
-    try {
-        //eslint-disable-next-line
-        console.log(foo);
-    } catch (e) {
-        // throw new Error(e);
-        console.error(e);
-    }
+    //eslint-disable-next-line
+    throw new Error("asfasd");
 }
 
 const fetcher = (code) => {
