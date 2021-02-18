@@ -26,6 +26,21 @@
     -->
     <title>React App</title>
     <script src="./error-collectors/generic-window-error.js"></script>
+    <script src="./error-collectors/boomerang-1.0.0.js"></script>
+    <script src="./error-collectors/rt.min.js"></script>
+    <script src="./build/plugins/auto-xhr.min.js"></script>
+    <script src="./build/plugins/errors.min.js.gz"></script>
+
+    <script>
+      BOOMR.init({
+        instrument_xhr: true,
+        beacon_url: "http://walmaert.com/beacon/",
+        ResourceTiming: {
+          enabled: true,
+          clearOnBeacon: true,
+        },
+      });
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
