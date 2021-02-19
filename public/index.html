@@ -29,16 +29,15 @@
     <!-- <script src="./client-logger.js"></script> -->
 
     <!-- Boomerang -->
-    <script src="./error-collectors/generic-window-error.js"></script>
-    <script src="./error-collectors/boomerang-1.0.0.js"></script>
-    <script src="./error-collectors/rt.min.js"></script>
+    <script src="./build/boomerang-1.0.0.min.js"></script>
+    <script src="./build/plugins/rt.min.js"></script>
     <script src="./build/plugins/auto-xhr.min.js"></script>
     <script src="./build/plugins/errors.min.js"></script>
 
     <script>
       BOOMR.init({
         instrument_xhr: true,
-        beacon_url: "https://walmart.com/beacon/",
+        beacon_url: "https://api.mocki.io/v1/c90af4f1",
         ResourceTiming: {
           enabled: true,
           clearOnBeacon: true, 
